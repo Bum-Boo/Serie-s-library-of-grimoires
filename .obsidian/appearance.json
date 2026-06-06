@@ -1,0 +1,11 @@
+{
+  "textFontFamily": "Mabinogi_Classic_OTF,Maplestory OTF Light",
+  "cssTheme": "",
+  "accentColor": "#daad0b",
+  "theme": "obsidian",
+  "interfaceFontFamily": "NEXON Lv1 Gothic Low OTF",
+  "monospaceFontFamily": "DNFForgedBlade-Bold",
+  "enabledCssSnippets": [
+    "Cards"
+  ]
+}

@@ -397,3 +397,42 @@ Remaining notes:
 - The sync script only reads profile `library/index.jsonl` and `library/entries/**/*.md` paths.
 - It writes only inside `운영_System/서재_Library/`.
 - It does not delete, move, rename, access secrets/auth/session stores, or perform Git operations.
+
+### 2026-06-11 - User Dashboard Rename and Automation Recovery
+
+Agent: 제리에
+
+Scope:
+
+- Renamed root dashboard note from `내 대시보드.md` to `User Dashboard.md`.
+- Updated legacy dashboard and Homepage plugin target to `User Dashboard`.
+- Made `.obsidian/snippets/Cards.css` and `.obsidian/snippets/PersonalDashboard.css` eligible for Git tracking by adjusting `.gitignore`.
+- Fixed `fern_local_library_supervisor.py` so local Ollama delays fall back within the cron time budget instead of timing out the no-agent job.
+- Ran the deterministic profile library sync, Grimoire Kanban, OpenAI Token Budget Audit, and nightly research queue scripts manually for verification.
+- Marked the 2026-06-06 Vault Health Report as a one-time snapshot.
+- Added the 2026-06-23 review condition to OpenAI Token Budget Audit.
+- Confirmed WSL `/mnt/c/...` and Windows `C:\\Users\\...` path forms point to the same Serie's Library of Grimoires vault.
+- Checked AI Agent Work Log size: 399 lines / 15,585 bytes before this entry; no split required yet.
+
+Validation:
+
+```bash
+python3 /home/hojun/hermes-lab/.hermes/profiles/memory/scripts/fern_local_library_supervisor.py --force
+python3 /home/hojun/hermes-lab/.hermes/profiles/memory/scripts/sync_profile_libraries_to_link.py
+python3 /home/hojun/hermes-lab/.hermes/profiles/memory/scripts/obsidian_grimoire_kanban.py
+python3 /home/hojun/hermes-lab/.hermes/profiles/memory/scripts/openai_token_budget_audit.py
+python3 /home/hojun/hermes-lab/.hermes/profiles/memory/scripts/nightly_research_queue.py
+```
+
+Result:
+
+- Fern supervisor no longer timed out; it wrote a deterministic fallback brief because Ollama tag/model lookup did not respond in time.
+- Profile library sync completed with `libraries=27 reflected=8 created=0 updated=2 skipped=44 missing=0`.
+- Grimoire Kanban and Operating Charter were updated by their script.
+- OpenAI Token Budget Audit was updated.
+- Nightly research queue wrote the 2026-06-11 classification note.
+
+Remaining notes:
+
+- Do not split `AI Agent Work Log.md` until it becomes materially hard to navigate or 힘멜 approves an archive split.
+- Local Ollama responsiveness still needs separate operational attention; the archive automation now degrades safely instead of failing.

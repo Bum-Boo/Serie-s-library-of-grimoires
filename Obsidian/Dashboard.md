@@ -1,42 +1,19 @@
 ﻿---
 type: dashboard
-status: active
+status: archived
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-11
 project: obsidian-automation
 area:
 topics:
   - obsidian
 tags:
   - legacy-dashboard
-summary:
+summary: "[[User Dashboard]]로 통합됨"
 related:
+  - "[[User Dashboard]]"
   - "[[운영_System/Bases_대시보드/Vault Dashboard]]"
 ---
-# [[Study/Index|Study]]
-- [Design](Study/Design/Index)
-- [Computer](Computer_Index)
-- [Branding](Study/Branding/Index)
-- Art
-- Music
-- Portfolio
+# Dashboard (통합됨)
 
---- 
-
-# [**Play**](Play/Index)
- - Game
- - Music
- - Book
-
----
-# [**Note**](Note/Index)
- - Pop-up
- - Daily
- - Week
- - Month
- - Archive
-
----
-# Setting
-[[Rules_MD]]
-[[CallOut]]
+이 대시보드의 내용은 [[User Dashboard]]로 통합되었다. 앞으로는 그쪽을 사용한다.

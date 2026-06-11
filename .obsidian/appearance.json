@@ -6,6 +6,7 @@
   "interfaceFontFamily": "NEXON Lv1 Gothic Low OTF",
   "monospaceFontFamily": "DNFForgedBlade-Bold",
   "enabledCssSnippets": [
-    "Cards"
+    "Cards",
+    "PersonalDashboard"
   ]
 }

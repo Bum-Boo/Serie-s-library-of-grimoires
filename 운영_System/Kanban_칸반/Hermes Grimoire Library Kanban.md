@@ -2,7 +2,7 @@
 type: kanban-board
 status: active
 created: 2026-06-07
-updated: 2026-06-07
+updated: 2026-06-11
 owner_profile: memory
 owner_name: 제리에
 vault: Serie's Library of Grimoires
@@ -19,7 +19,7 @@ related:
 ---
 # Hermes Grimoire Library Kanban
 
-갱신: `2026-06-07T08:08:35+0900`
+갱신: `2026-06-11T17:18:38+0900`
 
 ## 상태 확인
 
@@ -27,8 +27,8 @@ related:
 - Kanban config: 있음
 - Profile automation board: 있음
 - AI automation status report: 있음
-- Ollama HTTP: `ok`
-- 모델 일부: qwen3:30b-korean-final, qwen3:8b-korean-final, qwen3:30b, granite3-dense:8b, phi4-mini:latest, bge-m3:latest, exaone3.5:7.8b, qwen3-embedding:4b
+- Ollama HTTP: `unreachable:URLError`
+- 모델 일부: 없음
 
 ## Inbox
 
@@ -96,7 +96,7 @@ related:
 
 ## Active Automations
 
-- [x] 제리에 Series Library of Grimoires 서재 동기화
+- [x] 제리에 Serie's Library of Grimoires 서재 동기화
   - schedule: 매일 04:20
   - mode: no-agent
   - output: `운영_System/서재_Library/`
@@ -122,6 +122,23 @@ related:
   - output: `수집_Inbox/조사목록_ResearchQueue/`
 
 ## Review
+
+- [x] 2026-06-11 no-agent cron/게이트웨이 실행 상태 점검
+  - 결과: Hermes 내부 cron 5개는 enabled/scheduled. `memory gateway` 프로세스는 실행 중.
+  - 조치: 04:20/05:00/05:10/23:40 deterministic scripts 직접 재실행 성공. 04:35 페른 브리핑은 타임아웃 방지 fallback으로 수정 후 직접 실행 성공.
+  - 남은 위험: Ollama HTTP/tag 조회가 현재 응답 지연/불가 상태라 로컬 LLM 합성은 보류 기록으로 degrade됨.
+
+- [x] Vault Health Report(2026-06-06)에 1회성 스냅샷 표시 추가
+  - 결과: frontmatter와 본문 warning에 최신 상태 아님을 명시.
+
+- [x] OpenAI Token Budget Audit 재검토 날짜 명시
+  - 결과: 다음 재검토일 `2026-06-23`, 0건 반복 시 일일→주간 또는 폐기 검토 조건 추가.
+
+- [x] Status/Health 리포트의 vault 경로 표기 확인
+  - 결과: WSL `/mnt/c/...`와 Windows `C:\\Users\\...`가 같은 vault를 가리킴을 상태 리포트에 기록.
+
+- [x] AI Agent Work Log 길이/구조 점검
+  - 결과: 점검 전 399줄 / 15,585 bytes. 아직 분할 불필요. 이번 작업 이력만 append.
 
 - [ ] 첫 7일 동안 보드가 실제로 도움이 되는지 확인
 - [ ] Telegram으로 매일 알림을 보내지 않는다. 필요하면 힘멜이 요청할 때만 요약한다.

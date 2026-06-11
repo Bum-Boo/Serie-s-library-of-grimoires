@@ -6,6 +6,10 @@
 !.obsidian/daily-notes.json
 !.obsidian/templates.json
 !.obsidian/types.json
+!.obsidian/snippets/
+.obsidian/snippets/*
+!.obsidian/snippets/Cards.css
+!.obsidian/snippets/PersonalDashboard.css
 !.obsidian/plugins/
 .obsidian/plugins/*
 !.obsidian/plugins/dataview/

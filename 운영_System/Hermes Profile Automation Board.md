@@ -169,20 +169,8 @@ related:
 
 ## 다음 승격 후보
 
-1. Weekly Profile Growth Review
-   - 각 프로필이 힘멜에게 실제로 도움 된 점과 막힌 점 기록
-
-2. Weekly Obsidian Hygiene Report
-   - 깨진 링크, frontmatter 누락, 빈 노트, 미참조 첨부파일 점검
-
-3. Local LLM Availability Report
-   - Ollama endpoint와 모델 목록을 주기적으로 확인
-
-4. Creative Prompt Library Index
-   - 위벨 산출물 중 재사용 가치 있는 프롬프트만 색인
-
-5. Risk Audit Board
-   - 아우라가 자동화 권한, 출처 없는 RAG, 조작 위험을 감시
+승격 후보 목록의 단일 출처는 [[운영_System/Kanban_칸반/Hermes Grimoire Library Kanban|Hermes Grimoire Library Kanban]]의 `Inbox` 섹션이다.
+중복 관리를 막기 위해 이 보드에는 더 이상 후보 목록을 직접 나열하지 않는다.
 
 ## 운영 금지선
 

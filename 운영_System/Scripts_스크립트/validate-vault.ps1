@@ -89,7 +89,13 @@ $allowedTypes = @(
   'monthly-review',
   'output',
   'ai-image',
-  'ai-image-gallery'
+  'ai-image-gallery',
+  'system-dashboard',
+  'kanban-board',
+  'operating-plan',
+  'operating-charter',
+  'automation-status-report',
+  'cost-audit-report'
 )
 
 $allowedStatuses = @(
@@ -101,7 +107,8 @@ $allowedStatuses = @(
   'reading',
   'waiting',
   'done',
-  'archived'
+  'archived',
+  'prepared'
 )
 
 $ignoredTopFolders = @('.git', '.obsidian', '.trash', '.smart-env')

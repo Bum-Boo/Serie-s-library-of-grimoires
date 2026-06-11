@@ -2,7 +2,7 @@
   "version": 4,
   "homepages": {
     "Main Homepage": {
-      "value": "운영_System/Bases_대시보드/Vault Dashboard",
+      "value": "User Dashboard",
       "kind": "File",
       "openOnStartup": true,
       "openMode": "Replace all open notes",

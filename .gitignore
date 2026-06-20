@@ -66,7 +66,10 @@ Obsidian/Image/
 Note/Pop-up/
 Study/Computer/
 운영_System/Reports_리포트/
-운영_System/서재_Library/
+운영_System/서재_Library/*
+!운영_System/서재_Library/서재 색인.md
+!운영_System/서재_Library/Hermes 친구 프로필-관리 폴더 지도.md
+!운영_System/서재_Library/대도서관 접수 규칙 - SOUL 반영.md
 
 # Sensitive singleton patterns.
 *Token*Audit*

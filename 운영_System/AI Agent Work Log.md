@@ -2,7 +2,7 @@
 type: system-note
 status: active
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-20
 project: obsidian-automation
 area:
 topics:
@@ -436,3 +436,27 @@ Remaining notes:
 
 - Do not split `AI Agent Work Log.md` until it becomes materially hard to navigate or 힘멜 approves an archive split.
 - Local Ollama responsiveness still needs separate operational attention; the archive automation now degrades safely instead of failing.
+
+### 2026-06-20 - SOUL 기반 대도서관 접수 규칙 정비
+
+Agent: 제리에 / `serie`
+
+Scope:
+
+- 힘멜 승인 후 최신 profile SOUL 항목을 근거로 대도서관 개선점을 실제 vault와 profile library에 반영했다.
+- 제리에 정본 profile을 `serie`로 명시하고, 오래된 `memory` 표기는 레거시 별칭으로 정리했다.
+- `운영_System/서재_Library/대도서관 접수 규칙 - SOUL 반영.md`를 새로 만들었다.
+- `운영_System/서재_Library/Hermes 친구 프로필-관리 폴더 지도.md`에 `serie`, `veda`, `falsch`, `eisen`, `heiter` 등 최신 profile 반영을 보강했다.
+- `프로젝트_Projects/graduate-school_대학원.md`를 빈 문패에서 대학원 지식 운영 색인으로 확장했다.
+- `운영_System/서재_Library/서재 색인.md`에 새 접수 규칙 링크를 연결했다.
+
+Validation:
+
+- Vault validation script ran after edits.
+- Result: validation completed with existing vault warnings/issues; no broken wikilinks were introduced in the files changed by this work.
+- Manual modified-file check: new 접수 규칙, 프로필 지도, 서재 색인, 대학원 프로젝트 note wikilinks resolved.
+
+Remaining notes:
+
+- 기존 vault 안의 `User Dashboard.md.bak-codex-twemoji-20260612-024642`는 운영 규칙상 vault 밖 이동 후보지만, 이번 작업에서는 삭제·이동하지 않았다.
+- 현재 vault에는 이 작업 이전부터 존재하던 수정·미추적 파일들이 있어, 이번 보존 봉인은 승인된 대도서관 관련 파일만 선별 stage/push한다.
